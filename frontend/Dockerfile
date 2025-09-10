@@ -4,7 +4,7 @@ COPY package*.json ./
 RUN npm ci
 COPY . .
 ARG VITE_API_URL
-ENV VITE_API_URL=http://54.193.241.233:80/api
+ENV VITE_API_URL=https://priaccinnovations.online/api
 RUN npm run build
 
 FROM nginx:alpine
